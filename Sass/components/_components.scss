@@ -1,0 +1,46 @@
+@use "./variables/variables" as *;
+.section-heads {
+  color: $mainColor;
+  text-transform: uppercase;
+}
+.normal {
+  color: $linksColor;
+}
+.accent {
+  color: $accentColor;
+}
+.primary {
+  color: $mainColor;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 0.5em 1.5em;
+  transition: background-color $transWait;
+  position: relative;
+  overflow: hidden;
+  &.btn-primary {
+    background-color: $mainColor;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.3);
+  }
+  &.btn-accent {
+    background-color: $accentColor;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.3);
+  }
+}
+.section-p {
+  color: $paraColor;
+  line-height: 2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($footer, 0.8);
+}
+.category {
+  color: $headings;
+  text-transform: uppercase;
+  font-weight: 600;
+}

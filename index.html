@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>GONEX</title>
+    <link rel="stylesheet" href="Css/normalise.css" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Sass/main.css" />
+  </head>
+  <header class="hero-section">
+    <nav class="navigation">
+      <div class="container">
+        <i class="fa fa-bars" id="menuIcon"></i>
+        <div class="navigation_logo">
+          <img src="./imgs/header/nav/logo.png" alt="" />
+        </div>
+        <ul class="navigation_links_list" id="navigationMenu">
+          <li class="link"><a href="#HOME">Home</a></li>
+          <li class="link"><a href="#SERVICES">Services</a></li>
+          <li class="link"><a href="#GALLERY">Work</a></li>
+          <li class="link"><a href="#ABOUT">About Us</a></li>
+          <li class="link"><a href="#STATS">Skills</a></li>
+          <li class="link"><a href="#FOOTER">Contact</a></li>
+          <li class="link search">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="head" id="HOME">
+      <i class="chevron-arrows fa fa-chevron-left" id="leftArrow"></i>
+      <i class="chevron-arrows fa fa-chevron-right" id="rightArrow"></i>
+      <div class="overlay"></div>
+      <div class="head_qoutes">
+        <div class="qoute">
+          <h1 class="section-heads">
+            We are gonex1
+          </h1>
+          <p class="section-p">
+            Dui aliquam quisque. Nec feugiat ut neque odio quo, proin interdum,
+            quis elit varius et duis, dui augue vehicula nam tinc.
+          </p>
+          <a href="#" class="btn normal btn-accent">
+            Show me more
+          </a>
+        </div>
+
+        <div class="qoute">
+          <h1 class="section-heads">
+            We are gonex2
+          </h1>
+          <p class="section-p">
+            Dui aliquam quisque. Nec feugiat ut neque odio quo, proin interdum,
+            quis elit varius et duis, dui augue vehicula nam tinc.
+          </p>
+          <a href="#" class="btn normal btn-accent">
+            Show me more
+          </a>
+        </div>
+
+        <div class="qoute">
+          <h1 class="section-heads">
+            We are gonex3
+          </h1>
+          <p class="section-p">
+            Dui aliquam quisque. Nec feugiat ut neque odio quo, proin interdum,
+            quis elit varius et duis, dui augue vehicula nam tinc.
+          </p>
+          <a href="#" class="btn normal btn-accent">
+            Show me more
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="services" id="SERVICES">
+    <div class="cards">
+      <div class="card leftShift">
+        <h2 class="section-heads">
+          What we do
+          <span>Best</span>
+        </h2>
+        <span>see it yourself</span>
+      </div>
+
+      <div class="card rightShift">
+        <h3 class="section-heads">Photography</h3>
+        <p>Nec feugiat ut neque odio quo, interdum, quis elit varius.</p>
+        <a href="#" class="btn primary">See projects</a>
+      </div>
+
+      <div class="card leftShift">
+        <h3 class="section-heads">Graphic Design</h3>
+        <p>Nec feugiat ut neque odio quo, interdum, quis elit varius.</p>
+        <a href="#" class="btn primary">See projects</a>
+      </div>
+
+      <div class="card rightShift">
+        <h3 class="section-heads">App Development</h3>
+        <p>Nec feugiat ut neque odio quo, interdum, quis elit varius.</p>
+        <a href="#" class="btn primary">See projects</a>
+      </div>
+
+      <div class="card active leftShift">
+        <h3 class="section-heads">Programming</h3>
+        <p>Nec feugiat ut neque odio quo, interdum, quis elit varius.</p>
+        <a href="#" class="btn primary">See projects</a>
+      </div>
+
+      <div class="card rightShift">
+        <h3 class="section-heads">Web Coding</h3>
+        <p>Nec feugiat ut neque odio quo, interdum, quis elit varius.</p>
+        <a href="#" class="btn primary">See projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section" id="VIDEO">
+    <div class="overlay">
+      <img src="./imgs/header/nav/logo.png" alt="" />
+      <h3 class="section-heads">Show me the video</h3>
+      <p class="section-p">Just play and relax</p>
+      <i class="fa fa-play" id="playPause"></i>
+    </div>
+    <video controls muted>
+      <source src="./imgs/video-section/movie.mp4" type="video/webm" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+  </section>
+
+  <section class="gallery" id="GALLERY">
+    <div class="head">
+      <h2 class="section-heads">
+        Works
+      </h2>
+      <p class="section-p">
+        Dui aliquam quisque. Nec feugiat ut neque odio quo, proin interdum, 
+        quis elit varius et duis, dui augue vehicula nam tinc.
+      </p>
+    </div>
+
+    <div class="body">
+      <ul class="catigories">
+        <li class="catigory active" data-cat="all">All</li>
+        <li class="catigory" data-cat="photography">Photography</li>
+        <li class="catigory" data-cat="graphic">Graphic Design</li>
+        <li class="catigory" data-cat="app">App</li>
+        <li class="catigory" data-cat="programming">Programming</li>
+        <li class="catigory" data-cat="web">Web</li>
+      </ul>
+      <div class="images">
+        <div class="img" data-cat="graphic">
+          <div class="overlay">
+            <div class="box">
+              <h3 class="section-heads accent">Awesome image</h3>
+              <div class="reactions">
+                <i class="fa fa-heart"></i>
+                <span class="number">76 Likes</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./imgs/gallery/works_01.jpg" alt="">
+        </div>
+
+        <div class="img" data-cat="graphic">
+          <div class="overlay">
+            <div class="box">
+              <h3 class="section-heads accent">Awesome image</h3>
+              <div class="reactions">
+                <i class="fa fa-heart"></i>
+                <span class="number">76 Likes</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./imgs/gallery/works_02.jpg" alt="">
+        </div>
+        
+        <div class="img" data-cat="photography">
+          <div class="overlay">
+            <div class="box">
+              <h3 class="section-heads accent">Awesome image</h3>
+              <div class="reactions">
+                <i class="fa fa-heart"></i>
+                <span class="number">76 Likes</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./imgs/gallery/works_03.jpg" alt="">
+        </div>
+
+        <div class="img" data-cat="programming">
+          <div class="overlay">
+            <div class="box">
+              <h3 class="section-heads accent">Awesome image</h3>
+              <div class="reactions">
+                <i class="fa fa-heart"></i>
+                <span class="number">76 Likes</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./imgs/gallery/works_04.jpg" alt="">
+        </div>
+
+        <div class="img" data-cat="app">
+          <div class="overlay">
+            <div class="box">
+              <h3 class="section-heads accent">Awesome image</h3>
+              <div class="reactions">
+                <i class="fa fa-heart"></i>
+                <span class="number">76 Likes</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./imgs/gallery/works_05.jpg" alt="">
+        </div>
+
+        <div class="img" data-cat="web">
+          <div class="overlay">
+            <div class="box">
+              <h3 class="section-heads accent">Awesome image</h3>
+              <div class="reactions">
+                <i class="fa fa-heart"></i>
+                <span class="number">76 Likes</span>
+              </div>
+            </div>
+          </div>
+
+          <img src="./imgs/gallery/works_06.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="ABOUT">
+    <h2 class="section-heads">
+      About us
+    </h2>
+    <p>Simple word about our company</p>
+    <p>
+      Ad graeci omnium minimum sit, augue discere complectitur est te. Mea expetenda intellegebat no, reque signiferumque qui te, ad denique omittam mei. Veri numquam inciderint pri ad, saepe essent ut sea, nam ei civibus denique eleifend. Dicat pertinax ut vix, mazim platonem ea has. Partiendo intellegam ex eos, eos putant alienum ea. Ut malorum ponderum vituperata eum.
+    </p>
+  </section>
+
+  <section class="statistics" id="STATS">
+    <div class="head">
+      <h2 class="section-heads">
+        Gonex statistics
+      </h2>
+      <p class="section-p">
+        Dui aliquam quisque. Nec feugiat ut neque odio quo, proin interdum, 
+        quis elit varius et duis, dui augue vehicula nam tinc.
+      </p>
+    </div>
+
+    <div class="progress">
+      <div class="prog">
+        <h4>Photography</h4>
+        <div class="bar flow">
+          <div class="low-bar"></div>
+          <div class="higher-bar" data-elmWidth="93%"></div>
+        </div>
+      </div>
+
+      <div class="prog">
+        <h4>Graphic Design</h4>
+        <div class="bar flow">
+          <div class="low-bar"></div>
+          <div class="higher-bar" data-elmWidth="95%"></div>
+        </div>
+      </div>
+
+      <div class="prog">
+        <h4>App</h4>
+        <div class="bar flow">
+          <div class="low-bar"></div>
+          <div class="higher-bar" data-elmWidth="75%"></div>
+        </div>
+      </div>
+
+      <div class="prog">
+        <h4>Programming</h4>
+        <div class="bar flow">
+          <div class="low-bar"></div>
+          <div class="higher-bar" data-elmWidth="53%"></div>
+        </div>
+      </div>
+
+      <div class="prog">
+        <h4>Web</h4>
+        <div class="bar flow">
+          <div class="low-bar"></div>
+          <div class="higher-bar" data-elmWidth="84%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer" id="FOOTER">
+    <form action="">
+      <input type="email" placeholder="Email Address">
+      <a href="#" class="btn normal btn-primary">Subscribe</a>
+    </form>
+
+    <div class="contact">
+      <div class="contact-method">
+        <img src="./imgs/footer/icons/phone.png" alt="">
+        <span>+20 155-800-2847</span>
+      </div>
+
+      <div class="contact-method">
+        <img src="./imgs/footer/icons/mail.png" alt="">
+        <span>s0qq4r@gmail.com</span>
+      </div>
+
+      <div class="contact-method">
+        <img src="./imgs/footer/icons/map.png" alt="">
+        <span>عزبة محسن ناس تمام</span>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-dribbble"></i>
+      <i class="fab fa-google-plus-g"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </footer>
+
+  <section class="copyright" id="CPY-R">
+      This Design Is Made By GONEX, I Just Coded It
+  </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
