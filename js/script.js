@@ -87,9 +87,8 @@ navLinks.forEach((link) => {
     if (window.innerWidth <= 979) {
       navigationMenu.classList.remove('visible')
       menuIcon.classList.replace('fa-close', 'fa-bars')
-      let TimeOut = setTimeout(() => {
+      setTimeout(() => {
         smoothScroll(document.querySelector(e.target.getAttribute('href')), 1)
-        clearTimeout(TimeOut)
       }, 300)
     } else {
       smoothScroll(document.querySelector(e.target.getAttribute('href')), 1)
