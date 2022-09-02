@@ -85,10 +85,10 @@ navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     let destination = document.querySelector(e.target.getAttribute('href'));
-    if (window.innerWidth <= 979) {
-      navigationMenu.classList.remove('visible')
-      menuIcon.classList.replace('fa-close', 'fa-bars')
-    }
+//     if (window.innerWidth <= 979) {
+//       navigationMenu.classList.remove('visible')
+//       menuIcon.classList.replace('fa-close', 'fa-bars')
+//     }
       smoothScroll(destination, 1)
   })
 })
