@@ -59,36 +59,35 @@ let menuIcon = document.querySelector('#menuIcon'),
   navigationMenu = document.querySelector('#navigationMenu'),
   navLinks = navigationMenu.querySelectorAll('a[href^="#"]')
 
-navLinks.forEach((navLink) => {
-  navLink.addEventListener('click', (e) => {
+function smoothScroll(target, duration) {
+  let targetPosition =
+      target.getBoundingClientRect().top -
+      document.querySelector('nav').clientHeight,
+    startPosition = window.scrollY,
+    time = null,
+    ease = function (t, b, c, d) {
+      t /= d / 2
+      if (t < 1) return (c / 2) * Math.pow(2, 10 * (t - 1)) + b
+      t--
+      return (c / 2) * (-Math.pow(2, -10 * t) + 2) + b
+    }
+  function animation(currentTime) {
+    if (time === null) time = currentTime
+    let ElapsedTime = currentTime - time,
+      run = ease(ElapsedTime, startPosition, targetPosition, duration)
+    window.scrollTo(0, run)
+    if (ElapsedTime < duration) requestAnimationFrame(animation)
+  }
+  requestAnimationFrame(animation)
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
     e.preventDefault()
-    if (window.innerWidth <= 799) {
-      console.log(menuIcon)
-      navigationMenu.classList.toggle('visible')
-      menuIcon.classList.replace('fa-close', 'fa-bars')
-    }
-
-    let targetElm = document.querySelector(`${e.target.getAttribute('href')}`)
-    let targetRange = targetElm.getBoundingClientRect().top - 50
-    let smoothScroll = function (range) {
-      let position = 0,
-        progress = 0,
-        easeInOutQuint = (t) =>
-          t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t
-
-      let move = function () {
-        progress++
-        position = range * easeInOutQuint(progress / 100)
-        window.scrollTo(0, position)
-        if (position < range) {
-          requestAnimationFrame(move)
-        }
-      }
-      requestAnimationFrame(move)
-    }
-    smoothScroll(targetRange)
+    smoothScroll(document.querySelector(e.target.getAttribute('href')), 1000)
   })
 })
+
 menuIcon.addEventListener('click', navigationManipulation)
 function navigationManipulation() {
   this.classList.contains('fa-bars')
