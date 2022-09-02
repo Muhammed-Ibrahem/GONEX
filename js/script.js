@@ -84,7 +84,16 @@ function smoothScroll(target, duration) {
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault()
-    smoothScroll(document.querySelector(e.target.getAttribute('href')), 1000)
+    if (window.innerWidth <= 979) {
+      navigationMenu.classList.remove('visible')
+      menuIcon.classList.replace('fa-close', 'fa-bars')
+      let TimeOut = setTimeout(() => {
+        smoothScroll(document.querySelector(e.target.getAttribute('href')), 1)
+        clearTimeout(TimeOut)
+      }, 300)
+    } else {
+      smoothScroll(document.querySelector(e.target.getAttribute('href')), 1)
+    }
   })
 })
 
