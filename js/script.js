@@ -88,12 +88,8 @@ navLinks.forEach((link) => {
     if (window.innerWidth <= 979) {
       navigationMenu.classList.remove('visible')
       menuIcon.classList.replace('fa-close', 'fa-bars')
-      setTimeout(() => {
-        smoothScroll(destination, 1)
-      }, 300)
-    } else {
-      smoothScroll(destination, 1)
     }
+      smoothScroll(destination, 1)
   })
 })
 
