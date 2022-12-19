@@ -1,3 +1,3 @@
 # GONEX
 ## LIVE DEMO
-https://frolicking-cranachan-730cab.netlify.app
+https://gonex.netlify.app/
